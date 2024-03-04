@@ -31,6 +31,11 @@ class SavingsAccount(Account): #child class
     def interestAmount(self):
         return (self.interestRate * self.balance)/100
     
+    #method to add interest to balance  
+    def addInterest(self):
+        self.balance += self.interestAmount()
+        return self.balance
+    
 
     
 obj1 = SavingsAccount("Steve", 5000, 10)
@@ -40,3 +45,5 @@ print("Balance after withdrawal:", obj1.getBalance())
 obj1.deposit(500)
 print("Balance after deposit:", obj1.getBalance())
 print("Interest on current balance:", obj1.interestAmount())
+obj1.addInterest()      
+print("Balance after adding interest:", obj1.getBalance())
