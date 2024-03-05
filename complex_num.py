@@ -20,4 +20,6 @@ obj4 = obj - obj2
 print("Real of obj3:", obj3.real)
 print("Imag of obj3:", obj3.imag)
 print("Real of obj4:", obj4.real)
+print("Imag of obj4:", obj4.imag) 
+# The output of the above code will be: 
 
